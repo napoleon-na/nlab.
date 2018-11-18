@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog | N Lab.</title>
+	<meta name="description" content="勉強中のメモなどの備忘録ブログを予定しています">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+</head>
+<body>
+	<main>
+		<section class="hero is-fullheight">
+			<div class="hero-head">
+				<nav class="navbar">
+					<div class="container">
+						<div class="navbar-brand">
+							<a href="./index.html" class="navbar-item">N Lab.</a>
+							<span class="navbar-burger burger" data-target="navbarMenuHero">
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+							</span>
+						</div>
+						<div id="navbarMenuHero" class="navbar-menu">
+							<div class="navbar-end">
+								<a href="./profile.html" class="navbar-item">Profile</a>
+								<a href="#" class="navbar-item">Blog(準備中)</a>
+								<a href="./contact.html" class="navbar-item">Contact</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title">
+						Blog
+					</h1>
+					<h2 class="subtitle">
+						coming soon...
+					</h2>
+				</div>
+			</div>
+
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="content">
+				<p>
+					<small>Copyright 2013-2018 N Lab. All Rights Reserved.</small>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			if ($navbarBurgers.length > 0) {
+				$navbarBurgers.forEach(el => {
+					el.addEventListener('click', () => {
+						const target = el.dataset.target;
+						const $target = document.getElementById(target);
+						el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+					});
+				});
+			}
+		});
+	</script>
+</body>
+</html>

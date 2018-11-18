@@ -6,50 +6,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Profile | N Lab.</title>
 	<meta name="description" content="N Lab.へのお問い合わせはメールかチャットワークからお願いします">
-	<link rel="stylesheet" href="css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="header-left">
-				<a class="header-item" href="/">
-					N Lab.
-				</a>
-				<a class="header-tab" href="/profile.html">
-					Profile
-				</a>
-<!-- 				<a class="header-tab" href="#works">
-					Works
-				</a> -->
-				<a class="header-tab is-active" href="#">
-					Contact
-				</a>
-			</div>
-
-
-<!-- 			<div class="header-right header-menu">
-				<span class="header-item">
-					<a href="/">Blog</a>
-				</span>
-				<span class="header-item">
-					<span class="select">
-					    <select>
-							<option>日本語</option>
-							<option>English</option>
-					    </select>
-					</span>
-				</span>
-			</div> -->
-		</div>
-	</header>
-	<main>
-		<section class="hero is-medium">
-			<div class="hero-content">
+	<section class="hero is-medium">
+		<div class="hero-head">
+			<nav class="navbar">
 				<div class="container">
-					<h1 class="title">Contact</h1>
+					<div class="navbar-brand">
+						<a href="./index.html" class="navbar-item">N Lab.</a>
+						<span class="navbar-burger burger" data-target="navbarMenuHero">
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+						</span>
+					</div>
+					<div id="navbarMenuHero" class="navbar-menu">
+						<div class="navbar-end">
+							<a href="./profile.html" class="navbar-item">Profile</a>
+							<a href="./blog.html" class="navbar-item">Blog(準備中)</a>
+							<a href="#" class="navbar-item">Contact</a>
+						</div>
+					</div>
 				</div>
+			</nav>
+		</div>
+	
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title">
+					Contact
+				</h1>
 			</div>
-		</section>
+		</div>
+	
+	</section>
+
+	<main>
 		<section class="section">
 			<div class="container">
 				<div class="content">
@@ -68,5 +61,21 @@
 			</div>
 		</div>
 	</footer>
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			if ($navbarBurgers.length > 0) {
+				$navbarBurgers.forEach(el => {
+					el.addEventListener('click', () => {
+						const target = el.dataset.target;
+						const $target = document.getElementById(target);
+						el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+					});
+				});
+			}
+		});
+	</script>
 </body>
 </html>

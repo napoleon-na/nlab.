@@ -5,62 +5,74 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>N Lab.</title>
-	<meta name="description" content="N Lab.はあなたのやりたいをプログラミングで応援します。">
-	<link rel="stylesheet" href="css/bulma.min.css">
+	<meta name="description" content="N Lab.は長期的な技術サポートを行なっている個人事務所です。Web制作・iOSアプリ開発が得意です。">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<style>
+		.services-content {
+			margin-top: 3rem;
+		}
+	</style>
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="header-left">
-				<a class="header-item" href="#">
-					N Lab.
-				</a>
-				<a class="header-tab" href="/profile.html">
-					Profile
-				</a>
-<!-- 				<a class="header-tab" href="#works">
-					Works
-				</a> -->
-				<a class="header-tab" href="/contact.html">
-					Contact
-				</a>
-			</div>
 
-
-<!-- 			<div class="header-right header-menu">
-				<span class="header-item">
-					<a href="/">Blog</a>
-				</span>
-				<span class="header-item">
-					<span class="select">
-					    <select>
-							<option>日本語</option>
-							<option>English</option>
-					    </select>
-					</span>
-				</span>
-			</div> -->
-		</div>
-	</header>
-	<main>
-		<section class="hero is-large">
-			<div class="hero-content">
+	<section class="hero is-success is-medium is-bold">
+		<div class="hero-head">
+			<nav class="navbar">
 				<div class="container">
-					<h1 class="title">N Lab. is your supporter.</h1>
+					<div class="navbar-brand">
+						<a href="#" class="navbar-item">N Lab.</a>
+						<span class="navbar-burger burger" data-target="navbarMenuHero">
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+						</span>
+					</div>
+					<div id="navbarMenuHero" class="navbar-menu">
+						<div class="navbar-end">
+							<a href="./profile.html" class="navbar-item">Profile</a>
+							<a href="./blog.html" class="navbar-item">Blog(準備中)</a>
+							<a href="./contact.html" class="navbar-item">Contact</a>
+						</div>
+					</div>
 				</div>
+			</nav>
+		</div>
+
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title">
+					N Lab.
+				</h1>
+				<h2 class="subtitle">
+					is your supporter.
+				</h2>
 			</div>
-		</section>
+		</div>
+
+		<div class="hero-foot">
+			<nav class="tabs is-boxed is-fullwidth">
+				<div class="container">
+					<ul>
+						<li class="is-active"><a>Overview</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#skills">Skills</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+	</section>
+
+	<main>
 		<section class="section">
 			<div class="container">
-				<div class="heading">
-					<h2 class="title">N Lab.について</h2>
-				</div>
+				<h2 class="title">Overview</h2>
 				<div class="content">
 					<p>
 						N Lab.はフリーランスのWebプログラマーとして活動しているわたなべの個人事務所です。<br />
-						Web制作・iOSアプリ開発を得意としています。詳しくは「<a href="#service">業務内容</a>」をご覧ください。
+						個人・法人問わず技術面でのサポートを主に行なっています。分野としてはWeb制作・iOSアプリ開発が得意です。<br />
+						詳しくは「<a href="#service">Services</a>」をご覧ください。
 					</p>
-					<h3>概要</h3>
 					<table class="table">
 						<tbody>
 							<tr>
@@ -93,104 +105,193 @@
 							</tr>
 						</tbody>
 					</table>
+					<hr>
 					<h3>屋号の由来</h3>
 					<p>1つのことだけを事業としてずっとやっていくより、その時その時、興味のあるもの、喜ばれるもの、時代に合ったものを生業とするため屋号は様々な事業を行っても矛盾がおきないもの、また新しい何かを始めたり続けるための実験場とする意味合いも込めて、N（名前の頭文字）+　Lab.（Laboratry/実験室）としました。</p>
 				</div>
 			</div>
 		</section>
-		<section class="section" id="service">
+		<section class="section services" id="services">
 			<div class="container">
-				<div class="heading">
-					<h2 class="title">業務内容</h2>
-				</div>
+				<h2 class="title">Services</h2>
 				<div class="content">
-					<p>新規ご依頼受付停止中（2018.8現在）</p>
-					<p class="has-text-danger">
-						N Lab.の業務内容をご紹介します。併せて表示している言語などは実績のあるものになります。<br />
-						ここに記載のない業務・言語でも対応出来る可能性がありますのでお気軽にお問い合わせください。
+					<p>
+						N Lab.は長期的な技術サポートを軸にしています。対応言語については「<a href="#skills">Skills</a>」をご覧ください。
 					</p>
-					<div class="box">
-						<h3>技術支援</h3>
-						<p>月単位（時間数契約）でコーディング・プログラミングを承っております。人手が欲しいけど、このプロジェクトだけでいい・雇うほどではないといった場合にご利用ください。稼働はリモートのみになります。</p>
-						<p>
-							<span class="tag">Objective-C</span>
-							<span class="tag">Swift</span>
-							<span class="tag">HTML</span>
-							<span class="tag">CSS</span>
-							<span class="tag">JavaScript</span>
-							<span class="tag">jQuery</span>
-							<span class="tag">PHP</span>
-							<span class="tag">WordPress</span>
-							<span class="tag">WordPress（Genesis）</span>
-							<span class="tag">MySQL</span>
-							<span class="tag">SQLServer</span>
-							<span class="tag">ZendFramework</span>
-							<span class="tag">Laravel</span>
-							<span class="tag">CakePHP</span>
-						</p>
+					<div class="columns">
+						<div class="column has-text-centered services-content">
+							<span class="icon">
+								<i class="fas fa-3x fa-hands-helping"></i>
+							</span>
+							<h3 class="subtitle is-5">技術支援</h3>
+							<div class="field is-grouped is-grouped-centered is-grouped-multiline">
+								<div class="control">
+									<div class="tags has-addons">
+										<span class="tag">対象</span>
+										<span class="tag is-primary">法人向け</span>
+									</div>
+								</div>
+								<div class="control">
+									<div class="tags has-addons">
+										<span class="tag">受付状況</span>
+										<span class="tag is-danger">停止中（2018.11現在）</span>
+									</div>
+								</div>
+							</div>
+							<p>
+								月単位（時間数）契約での技術支援を行なっています。<br>
+								支援内容はプログラミングの他にDB設計・ライブラリ調査・テストなど上流工程から下流工程まで幅広く対応しています。<br>
+								（インフラ・デザインに関する業務は対応外です）
+							</p>
+							<p>
+								※稼働はリモートのみ、月4日(32時間/週1日)稼働の3ヶ月契約から承っております。
+							</p>
+						</div>
+						<div class="column has-text-centered services-content">
+							<span class="icon">
+								<i class="fas fa-3x fa-comments"></i>
+							</span>
+							<h3 class="subtitle is-5">プログラミングのご相談</h3>
+							<div class="field is-grouped is-grouped-centered is-grouped-multiline">
+								<div class="control">
+									<div class="tags has-addons">
+										<span class="tag">対象</span>
+										<span class="tag is-primary">個人向け</span>
+									</div>
+								</div>
+								<div class="control">
+									<div class="tags has-addons">
+										<span class="tag">受付状況</span>
+										<span class="tag is-primary">受付中</span>
+									</div>
+								</div>
+							</div>
+							<p>
+								初心者・非業界の方向けにプログラミングのご相談に乗っています。<br>
+								作りたいものがある、独学していて詰まったところを相談したいといったお一人お一人のご希望に合わせて対応しております。
+							</p>
+							<p>
+								対面マンツーマンが基本ですが遠方の場合はスカイプ等でも対応可能です。（対面対応エリアは大阪市内のみとなります）
+							</p>
+							<p>
+								※スポット（単発）対応、1時間3,240円にてお受けしております。<br>
+							</p>
+						</div>
 					</div>
-					<div class="box">
-						<h3>iOSアプリ開発</h3>
-						<p>ネイティブ言語でのiOSアプリ開発を承っております。サーバー通信が必要なアプリにも対応。ご希望によりAppleへの代行申請・リジェクト対応までデザインを除いてほぼ全て承っております。また、アプリのサーバー側だけや一部機能のみ実装など部分対応も可能です。</p>
-						<p>
-							<span class="tag">Swift</span>
-							<span class="tag">Objective-C</span>
-							<span class="tag">PHP</span>
-							<span class="tag">MySQL</span>
-						</p>
+					<hr>
+					<p class="content is-small">
+						どちらのサービスもそうですが、誰だかわからない人間にいきなり頼むのは不安かと思いますので（※）正式にお申し込みいただく前にトライアルも可能です。ご興味ございましたらお気軽にお問い合わせください。
+						あと、月1回大阪市内で開催されている<a href="https://www.meetup.com/Osaka-Coffee-and-Coding/" target="_blank">ミートアップ（Osaka Coffee and Coding Meetup）</a>にほぼ毎月参加しています。ラフな状態でのお話でしたらこちらに（個人の方にとっては内容的にも）ご参加いただくのも良いかもしれません。
+					</p>
+					<p class="content is-small">※できるだけお仕事をお受けする前にご依頼いただける方と少しでもお知り合いになれたらなぁとつねづね思っています。</p>
+				</div>
+			</div>
+		</section>
+		<section class="section skills" id="skills">
+			<div class="container">
+				<h2 class="title">Skills</h2>
+				<div class="content">
+					<p>
+						Servicesで対応している言語・フレームワーク等は以下の通りです。現在使用中のものとそうでないもの＋使用履歴で分けています。
+						（経験年数はおいおい追加します）勉強中のものはBlogにも書いています。
+					</p>
+					<div class="tags has-addons">
+						<span class="tag is-dark">凡例</span>
+						<span class="tag is-link">言語</span>
+						<span class="tag is-warning">フレームワーク・ライブラリ</span>
+						<span class="tag is-success">その他</span>
 					</div>
-					<div class="box">
-						<h3>Web制作（Webサイト・CMS・Webアプリケーション）・システム構築・既存システム改修</h3>
-						<p>コーディング・プログラミングのみ承っております。静的サイトやランディングページのコーディング、WordPressのテーマ制作・カスタマイズ、Jsでのフロント実装、DB設計、サーバーサイド実装、プロトタイプ制作など幅広く対応しております。</p>
-						<p>
-							<span class="tag">HTML</span>
-							<span class="tag">CSS</span>
-							<span class="tag">JavaScript</span>
-							<span class="tag">jQuery</span>
-							<span class="tag">Vue.js</span>
-							<span class="tag">PHP</span>
-							<span class="tag">WordPress</span>
-							<span class="tag">WordPress（Genesis）</span>
-							<span class="tag">Java</span>
-							<span class="tag">MySQL</span>
-							<span class="tag">SQLServer</span>
-							<span class="tag">VB.NET</span>
-							<span class="tag">FuelPHP</span>
-							<span class="tag">CakePHP</span>
-							<span class="tag">YiiFramework</span>
-							<span class="tag">ZendFramework</span>
-							<span class="tag">Laravel</span>
-						</p>
+					<h3 class="subtitle is-5">2018年現在使用しているもの</h3>
+					<div class="tags">
+						<span class="tag is-link">Swift4</span>
+						<span class="tag is-link">PHP</span>
+						<span class="tag is-link">SQL</span>
+						<span class="tag is-link">HTML</span>
+						<span class="tag is-link">CSS</span>
+						<span class="tag is-link">Sass</span>
+						<span class="tag is-link">JavaScript</span>
+						<span class="tag is-warning">Vue.js</span>
+						<span class="tag is-warning">Nuxt.js</span>
+						<span class="tag is-warning">jQuery</span>
+						<span class="tag is-warning">Laravel5</span>
+						<span class="tag is-warning">CakePHP2</span>
+						<span class="tag is-warning">Onsen UI 1</span>
+						<span class="tag is-success">npm</span>
+						<span class="tag is-success">Yarn</span>
+						<span class="tag is-success">webpack</span>
+						<span class="tag is-success">gulp</span>
+						<span class="tag is-success">Docker</span>
+						<span class="tag is-success">CocoaPods</span>
+						<span class="tag is-success">Carthage</span>
+						<span class="tag is-success">WordPress</span>
+						<span class="tag is-success">MySQL</span>
+						<span class="tag is-success">Firebase</span>
+						<span class="tag is-success">Git</span>
 					</div>
-					<div class="box">
-						<h3>コーディング・プログラミングの技術指導・ご相談</h3>
-						<p>初心者の方や企業のWeb担当者の方向けにコーディングやプログラミングの技術指導やご相談を承っております。ガッツリ学びたい、自力である程度出来るようになりたいといった個々人の目標に合わせてご指導いたします。マンツーマンが基本となりますが、ご訪問でのご指導・複数人対応なども可能ですのでお気軽にお問い合わせください。対応エリアは大阪市内のみとなります。</p>
-						<p>
-							<span class="tag">HTML</span>
-							<span class="tag">CSS</span>
-							<span class="tag">JavaScript</span>
-							<span class="tag">jQuery</span>
-							<span class="tag">PHP</span>
-							<span class="tag">WordPress</span>
-							<span class="tag">Objective-C</span>
-						</p>
+					<hr>
+					<h3 class="subtitle is-5">現在未使用</h3>
+					<h3 class="subtitle is-6">5年以内に使用したことがあるもの</h3>
+					<div class="tags">
+						<span class="tag is-link">Objective-C</span>
+						<span class="tag is-link">Less</span>
+						<span class="tag is-warning">Zend Framework2</span>
+						<span class="tag is-warning">Smarty</span>
+						<span class="tag is-warning">Bootstrap</span>
+						<span class="tag is-warning">Genesis Framework</span>
+						<span class="tag is-success">SQL Server</span>
+						<span class="tag is-success">Grunt</span>
+						<span class="tag is-success">Vagrant</span>
+						<span class="tag is-success">Subversion</span>
 					</div>
-					<div class="box">
-						<h3>その他</h3>
-						<p>サーバー契約・ドメイン取得代行のほか、マニュアル作成なども行っています。</p>
+					<h3 class="subtitle is-6">もっと過去</h3>
+					<div class="tags">
+						<span class="tag is-link">Java</span>
+						<span class="tag is-link">Java(Android)</span>
+						<span class="tag is-link">VB.NET</span>
+						<span class="tag is-link">VBA</span>
+						<span class="tag is-link">T-SQL</span>
+						<span class="tag is-link">PL/SQL</span>
+						<span class="tag is-warning">Apache Struts 1</span>
+						<span class="tag is-warning">Zend Framework1</span>
+						<span class="tag is-warning">Yii 1</span>
+						<span class="tag is-warning">FuelPHP</span>
+						<span class="tag is-success">PostgreSQL</span>
+					</div>
+					<p class="content is-small">Javaが初めて習得した言語です。元々オープン系のプログラマーでした。</p>
+					<hr>
+					<h3 class="subtitle is-5">勉強中</h3>
+					<div class="tags">
+						<span class="tag is-link">Dart</span>
+						<span class="tag is-warning">Flutter</span>
+						<span class="tag is-success">CI系</span>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
+
 	<footer class="footer">
 		<div class="container">
-			<div class="content">
-				<p>
-					<small>Copyright 2013-2018 N Lab. All Rights Reserved.</small>
-				</p>
-			</div>
+			<p>
+				<small>Copyright 2013-2018 N Lab. All Rights Reserved.</small>
+			</p>
 		</div>
 	</footer>
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			if ($navbarBurgers.length > 0) {
+				$navbarBurgers.forEach(el => {
+					el.addEventListener('click', () => {
+						const target = el.dataset.target;
+						const $target = document.getElementById(target);
+						el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+					});
+				});
+			}
+		});
+	</script>
 </body>
 </html>
